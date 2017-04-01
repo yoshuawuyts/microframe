@@ -15,7 +15,7 @@ html`
 `
 function onkeydown (e) {
   var value = e.target.value
-  nextFrame(function () {
+  microframe(function () {
     console.log('called at the start of a new frame', value)
   })
 }
